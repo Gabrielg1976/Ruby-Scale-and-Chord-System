@@ -1,0 +1,7 @@
+Ruby Scale and Chord System Engine. 
+
+The goal of this project is to create a simple way for people to create music with ruby code.
+
+1. A Simple Library system for calling Scales and chords.
+2. Create a way to choose and build chord progressions and to use default presets.
+3. Clean up the code.   
