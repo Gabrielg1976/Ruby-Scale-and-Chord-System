@@ -4,4 +4,25 @@ The goal of this project is to create a simple way for people to create music wi
 
 1. A Simple Library system for calling Scales and chords.
 2. Create a way to choose and build chord progressions and to use default presets.
-3. Clean up the code.   
+3. Clean up the code.
+
+
+
+
+How to Use the where to Start...
+
+
+To run >> ruby progression.rb    
+
+
+This app allows you to
+
+1. Choose the key of the song
+2. Choose a Scale
+3. Title the Track
+
+
+It generates a 3 channel midi file that can be used in a out side softsynth or other midi readable device. 
+
+
+  
