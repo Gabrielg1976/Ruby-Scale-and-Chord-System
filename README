@@ -3,22 +3,26 @@ Ruby Scale and Chord System Engine.
 The goal of this project is to create a simple way for people to create music with ruby code.
 
 1. A Simple Library system for calling Scales and chords.
+
 2. Create a way to choose and build chord progressions and to use default presets.
+
 3. Clean up the code.
-4. move the chord library out of the main progression.rb 
+
+4. move the chord library out of the main progression.rb
+
+5 Need to add a way for the user to choose number of channels they like and set each one to one of the 3
+options Melody harmony(chord) or Arp(based off the chords)
+
 
 How to Use the where to Start...
 
-
 To run >> ruby progression.rb    
-
 
 This app allows you to
 
 1. Choose the key of the song
 2. Choose a Scale
 3. Title the Track
-
 
 It generates a 3 channel midi file that can be used in a out side softsynth or other midi readable device. 
 
