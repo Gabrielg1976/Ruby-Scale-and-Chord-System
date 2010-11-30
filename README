@@ -5,9 +5,7 @@ The goal of this project is to create a simple way for people to create music wi
 1. A Simple Library system for calling Scales and chords.
 2. Create a way to choose and build chord progressions and to use default presets.
 3. Clean up the code.
-
-
-
+4. move the chord library out of the main progression.rb 
 
 How to Use the where to Start...
 
@@ -24,5 +22,7 @@ This app allows you to
 
 It generates a 3 channel midi file that can be used in a out side softsynth or other midi readable device. 
 
+
+There are a few midi files in there can be listen too where I was working on creating a basic chord progressions.. 
 
   
