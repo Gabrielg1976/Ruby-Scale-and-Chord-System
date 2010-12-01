@@ -1,3 +1,20 @@
+Last Updated 12/01/2010 
+
+Projects:
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+1. Ruby Music UI:
+
+This is a Simple Desktop based text to music Interface designed with ruby and using the Tk Library.
+
+creates a single channel midi file based of the the text you input.. 
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+2. The Computer Band:
+
 Ruby Scale and Chord System Engine. 
 
 The goal of this project is to create a simple way for people to create music with ruby code.
