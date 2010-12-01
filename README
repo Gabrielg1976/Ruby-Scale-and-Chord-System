@@ -11,6 +11,16 @@ This is a Simple Desktop based text to music Interface designed with ruby and us
 
 creates a single channel midi file based of the the text you input.. 
 
+To Use:
+
+go to the file directory 
+
+to run >> ruby gui_text2music.rb 
+
+thats it type the text you want and convert.. 
+
+The skin is just a simple jpg so you can redesign it if you like.. Future I'll add a way to choose different skins for the app just for fun and maybe more functionality to the actual App.. 
+
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 2. The Computer Band:
