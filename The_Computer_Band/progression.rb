@@ -166,7 +166,7 @@ MIDI::ProgramChange.new(@channel, instrument)
 	# Build a A chord Library with all major and minor chord patterns 
 
   # major chord
-  def add_major(low_note, velocity=127, duration='quarter')
+  def add_major(low_note,velocity=127, duration='quarter')
    add_notes([0, 4, 7].collect { |x| x + low_note }, velocity, duration)
   end
 
@@ -416,6 +416,9 @@ end
 
 # menu ends # # # # # # 
 
+# Legal names are any value in NOTE_TO_LENGTH, optionally prefixed by "dotted_" and/or suffixed by "_triplet".
+# So, for example, "dotted_quarter_triplet"
+# returns the length of a dotted quarter-note triplet and "32nd" returns 1/32.
 # This can be taken all the way to 128th 
 note_length=["8th","quarter","half","whole"]
 
@@ -599,19 +602,36 @@ end
  # Creates the Musical Composition
 #::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::    
 
-(24*4).times do |i|
+# part 1
 
+1.times do
 # Default C Major Scale  
-
  note = interval[rand(interval.size)] + key
   
  #Reset to middle C if we go out of the MIDI range 
- note = 0 + key if note < -39 + key or note > 48 + key
+ note = 0 if note < -39 + key or note > 48 + key
  
- melody.add_notes(note,rand(77) + 50,note_length[rand(note_length.size)])
- harmony.major_i(note,rand(77) + 50,note_length[rand(note_length.size)]) if i % 4 == 0
- arp.add_notes(maj_i_arp[rand(maj_i_arp.size)],rand(77) + 50,note_length[rand(note_length.size)])
+ 4.times do
+  melody.add_notes(note,rand(77) + 50,note_length[rand(note_length.size)])
+ end
+ 
+ 4.times do
+  arp.add_notes(min_vi_arp[rand(maj_i_arp.size)],rand(77) + 50,note_length[rand(note_length.size)])
+ end
+ 
+ 2.times do
+  
+  2.times do
+   harmony.major_i(note,rand(77) + 50,note_length[rand(note_length.size)])
+  end
+  
+  2.times do
+   harmony.major_iv(note,rand(77) + 50,note_length[rand(note_length.size)])
+  end
+ end
+ 
 end
+
 
 # Name a Generates the actual midi file.
 open("#{title}"+".mid",'w') { |f| song.write(f) }

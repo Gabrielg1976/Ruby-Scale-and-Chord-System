@@ -2,7 +2,7 @@ require 'music'
 require 'scales'
 count=0
 
-number_notes=8
+number_notes=64
 
 midi = LiveMIDI.new 
 
