@@ -414,16 +414,19 @@ end
 
  # Reset to middle C if we go out of the MIDI range 
   note = 0 if note < -39  or note > 48
-
- 1.times do   
+  
         #  number of times to play the I chord 
    4.times do
     section_1.add_notes(major_i[rand(major_i.size)],rand(77) + 50,note_length[rand(note_length.size)])
     section_2.add_notes(major_i[rand(major_i.size)],rand(77) + 50,note_length[rand(note_length.size)])
     section_3.add_notes(major_i[rand(major_i.size)],rand(77) + 50,note_length[rand(note_length.size)])
     section_4.add_notes(major_i[rand(major_i.size)],rand(77) + 50,note_length[rand(note_length.size)])
+    section_1.add_notes(major_iv[rand(major_iv.size)],rand(77) + 50,note_length[rand(note_length.size)])
+     section_2.add_notes(major_iv[rand(major_iv.size)],rand(77) + 50,note_length[rand(note_length.size)])
+     section_3.add_notes(major_iv[rand(major_iv.size)],rand(77) + 50,note_length[rand(note_length.size)])
+     section_4.add_notes(major_iv[rand(major_iv.size)],rand(77) + 50,note_length[rand(note_length.size)])
    end
- end
+
  
  # Names and Generates the actual midi file.
  open("AMQ"+".mid",'w') { |f| song.write(f) }
@@ -441,21 +444,36 @@ end
   
     1.times do
      section_1.add_notes(major_iv[rand(major_iv.size)],rand(77) + 50,note_length[rand(note_length.size)])
+     section_2.add_notes(major_iv[rand(major_iv.size)],rand(77) + 50,note_length[rand(note_length.size)])
+     section_3.add_notes(major_iv[rand(major_iv.size)],rand(77) + 50,note_length[rand(note_length.size)])
+     section_4.add_notes(major_iv[rand(major_iv.size)],rand(77) + 50,note_length[rand(note_length.size)])
     end
   
     1.times do
      section_1.add_notes(minor_ii[rand(minor_ii.size)],rand(77) + 50,note_length[rand(note_length.size)])
+     section_2.add_notes(minor_ii[rand(minor_ii.size)],rand(77) + 50,note_length[rand(note_length.size)])
+     section_3.add_notes(minor_ii[rand(minor_ii.size)],rand(77) + 50,note_length[rand(note_length.size)])
+     section_4.add_notes(minor_ii[rand(minor_ii.size)],rand(77) + 50,note_length[rand(note_length.size)])
     end
   
     1.times do
      section_1.add_notes(major_i[rand(major_i.size)],rand(77) + 50,note_length[rand(note_length.size)])
+     section_2.add_notes(major_i[rand(major_i.size)],rand(77) + 50,note_length[rand(note_length.size)])
+     section_3.add_notes(major_i[rand(major_i.size)],rand(77) + 50,note_length[rand(note_length.size)])
+     section_4.add_notes(major_i[rand(major_i.size)],rand(77) + 50,note_length[rand(note_length.size)])
     end
   
     1.times do
      section_1.add_notes(major_v[rand(major_v.size)],rand(77) + 50,note_length[rand(note_length.size)])
+     section_1.add_notes(major_v[rand(major_v.size)],rand(77) + 50,note_length[rand(note_length.size)])
+     section_1.add_notes(major_v[rand(major_v.size)],rand(77) + 50,note_length[rand(note_length.size)])
+     section_1.add_notes(major_v[rand(major_v.size)],rand(77) + 50,note_length[rand(note_length.size)])
     end
   
     1.times do
+     section_1.add_notes(major_i[rand(major_i.size)],rand(77) + 50,note_length[rand(note_length.size)])
+     section_1.add_notes(major_i[rand(major_i.size)],rand(77) + 50,note_length[rand(note_length.size)])
+     section_1.add_notes(major_i[rand(major_i.size)],rand(77) + 50,note_length[rand(note_length.size)])
      section_1.add_notes(major_i[rand(major_i.size)],rand(77) + 50,note_length[rand(note_length.size)])
     end
   
